@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: roboto Arial, Helvetica, sans-serif;
+    list-style: none;
+    transition: .75s;
+}
+
+/* HEADER */
+.main-header {
+    /* LAYOUT */
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: .5em;
+    
+    /* BASE */
+    height: 5em;
+    background-color: hsl(240, 60%, 15%);
+    color: hsl(240, 60%, 90%);
+}
+
+/* PROFILE SECTION */
+.profile-section, .l-section-expercience {
+    padding: 1em 0;
+}
+
+
+@media screen and (min-width: 960px) {
+    .profile-section, .l-section-expercience {
+        padding: 1em 3em;
+    }
+    
+}
+
+.l-section-expercience {
+    border-top: 1px solid hsl(240, 60%, 15%);
+}
+
+@media screen and (min-width: 960px) {
+    .l-section-expercience {
+        border: 4px solid hsl(240, 60%, 15%);
+        margin: 1em;
+        border-radius: 1em;
+    }
+    
+}
+
+.profile-section__block {
+    display: grid;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 960px) {
+    .profile-section__block {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
+    }
+    
+}
+
+.resume-section {
+    padding: .5em 1em;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: .75em;
+    color: hsl(240, 60%, 15%);
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    grid-gap: 1.5rem;
+}
+
+.resume-flex {
+    display: flex;
+    align-items: center;
+}
+
+.profile-clap {
+    width: 2rem;
+}
+
+@media screen and (min-width: 960px) {
+    .profile-clap {
+        width: 4rem;
+    }
+    
+}
+
+.contact-wrapper {
+    border: 1px solid hsl(240, 60%, 15%);
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    background-color: hsl(240, 50%, 15%);
+    order: -1;
+
+}
+
+@media screen and (min-width: 960px) {
+    .contact-wrapper {
+        border-radius: .75em;
+        order: 100;   
+    }
+    
+}
+
+.image-container {
+    background-image: url(/img/isaid.png);
+    background-size: 100%;
+    background-position: 0 -1.5em;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.contact-container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    color: hsl(240, 60%, 90%);
+}
+
+.second-subtitle {
+    /* font-size: 2rem; */
+    margin-bottom: .5em;
+    text-align: center;
+    color: hsl(240, 60%, 15%);
+}
+
+.contact-subtitle {
+    color: hsl(240, 60%, 90%);
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.p-contact, .date {
+    margin-bottom: .5em;
+}
+
+.p-contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.p-contact a:hover {
+    text-decoration: underline;
+}
+
+.date {
+    margin-left: 1em;
+}
+
+/* EXPERIENCE SECTION */
+/* @media screen and (min-width: 960px) {
+    .experience-section {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+        grid-auto-rows: 1fr;
+    }    
+} */
+
+.experience-item {
+    background-color: hsl(0, 0%, 95%);
+    padding: 1em;
+    border-radius: .75em;
+    color: hsl(240, 60%, 15%);
+    display: grid;
+    align-items: center;
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 960px) {
+    .experience-item {
+        background-color: hsl(0, 0%, 95%);
+        padding: 1em;
+        border-radius: .75em;
+        color: hsl(240, 60%, 15%);
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+        align-items: center;
+        /* font-size: 1.2rem; */
+    }    
+}
+
+.experience-link {
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: .75em;
+    color: hsl(240, 60%, 90%);
+    background-color: hsl(240, 50%, 15%);
+}
+
+a .experience-link {
+    margin: .1rem auto;
+}
+
+@media screen and (min-width: 960px) {
+    .experience-link {
+        text-decoration: none;
+        padding: 1em 2em;
+        border-radius: .75em;
+        color: hsl(240, 60%, 90%);
+        background-color: hsl(240, 50%, 15%);
+    }   
+}
+
+.experience-link:hover {
+    background-color: hsl(240, 60%, 18%);
+}
+
+.list-item li {
+    margin-bottom: 1rem;
+}
+
+.list-item {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-tool {
+    font-weight: 700;
+}
+
+/* TECNOLOGÍAS */
+.technology-section {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 960px) {
+    .technology-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 10em;
+    }
+    
+}
+
+.technology-item {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: .75em;
+    padding: 1em;
+}
+
+.technology-item h3 {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.technology-grid {
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    align-content: center;
+}
+
+.technology-grid p {
+    border-radius: .75em;
+    padding: .5em 0;
+    text-align: center;
+    background-color: hsl(0, 0%, 85%);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* CURSOS REALIZADOS */
+.courses-section {
+    display: grid;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 960px) {
+    .courses-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 2em 4em;
+    }
+    
+}
+
+.course-item, .technology-item {
+    padding: 1em 0;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: .75em;
+    color: hsl(240, 50%, 15%);
+}
+
+.course-item:hover {
+    background-color: hsl(0, 0%, 85%);
+}
+
+.course-item p {
+    text-align: center;
+}
+
+.course-item p:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    height: 8em;
+    background-color: hsl(240, 50%, 15%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: hsl(240, 60%, 90%);
+}
+
+.footer p, .footer p a {
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-item {
+    margin-bottom: .5em;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+/* MODAL */
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background-color: rgba(0, 0, 0, .6);
+    /* grid-template-columns: 3em 1fr 3em; */
+    /* grid-gap: 1em; */
+    justify-items: center;
+    align-items: center;
+    /* padding: 2em; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (min-width: 960px) {
+    .modal-bg {
+        grid-template-columns: 3em 1fr 3em;
+        grid-gap: 1em;
+        padding: 2em;
+    }
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.course-picture {
+    width: 100vw;
+    background-color: ivory;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 960px) {
+    .course-picture {
+        width: 48.5vw;
+        height: 80.3vh;
+    }
+}
+
+.modal-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal-item {
+    color: hsl(0, 0%, 85%);
+    align-self: start;
+}
+
+.jam-close-circle {
+    font-size: 2rem;
+}
+
+.jam-close-circle:hover {
+    color: hsl(0, 0%, 50%);
+}
